@@ -193,14 +193,7 @@
 
 // 14. Find the longest word in a given string.
 
-// let s = " JavaScript is a scripting and programming language";
-// let  = s.split(" ")
-// let val = res.reduce((acc,cur,ind)=>{
-//     if(cur.length>res[acc].length){
-//         return ind;
-//     }
-//     return acc;
-// })
+
 
 function longest_word(s){
     s = s.split(" ")
