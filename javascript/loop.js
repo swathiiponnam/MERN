@@ -72,15 +72,18 @@ console.log(Math.round(5.2));
 console.log(Math.random());
 
 
-function my_fun1(){
-    for(var i=0;i<2;i++){
-        setTimeout(() => {
-            console.log("hi");
-            console.log(i);
+// function my_fun1(){
+//     for(var i=0;i<2;i++){
+//         setTimeout(() => {
+//             console.log("hi");
+//             console.log(i);
             
-        }, 2000);
+//         }, 2000);
        
         
-    }
-}
-my_fun1();
+//     }
+// }
+// my_fun1();
+
+
+// string methods

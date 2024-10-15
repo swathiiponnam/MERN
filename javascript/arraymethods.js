@@ -66,10 +66,21 @@ let arr = [20,30,40,50,15,22]
 
 // ................map..................
 
-arr.map((ele)=>{
-    res = ele*2;
-    console.log(res);
+// arr.map((ele)=>{
+//     res = ele*2;
+//     console.log(res);
     
-})
+// })
 
 // ................
+let a=[1,2,3,4,5,6,7,8];
+console.log(a);
+// let b=a.push(5);
+// console.log(a);
+// let b=a.concat(6);
+// console.log(b);
+
+let b=a.slice(6,3,-1);
+console.log(b)
+
+

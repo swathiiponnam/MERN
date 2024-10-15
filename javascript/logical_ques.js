@@ -175,6 +175,14 @@
 
 // 12.  Find the missing number in a sequence of integers from 1 to `n`, where one number is missing.
 
+// let arr = [1,2,3,5,6]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i+1]-arr[i]>1){
+//         let res= arr[i]+1;
+//     }
+// }
+// console.log(res);
+
 
 // 13. Flatten a nested array into a single-level array.
 
@@ -185,12 +193,26 @@
 
 // 14. Find the longest word in a given string.
 
-let s = " JavaScript is a scripting and programming language";
-let res = s.split('[]')
+// let s = " JavaScript is a scripting and programming language";
+// let  = s.split(" ")
+// let val = res.reduce((acc,cur,ind)=>{
+//     if(cur.length>res[acc].length){
+//         return ind;
+//     }
+//     return acc;
+// })
 
-
-console.log(res);
-
+function longest_word(s){
+    s = s.split(" ")
+    let ind = s.reduce((acc,cur,i)=>{
+        if(cur.length>s[acc].length){
+            return i;
+        }
+        return acc;
+    },0);
+    return s[ind];
+}
+console.log(longest_word(" JavaScript is a scripting and programming language"));
 
 //15. Given an array of integers and a target sum, return the indices of the two numbers that add up to the target
 
