@@ -84,6 +84,12 @@
 // console.log(res);
 
 
+let num = -542;
+let rem = num%10;
+let div = num/10
+console.log(rem , div);
+
+
 // 7. check if 2 given strings are anagram
 
 // function anagram(s1,s2){
@@ -195,17 +201,17 @@
 
 
 
-function longest_word(s){
-    s = s.split(" ")
-    let ind = s.reduce((acc,cur,i)=>{
-        if(cur.length>s[acc].length){
-            return i;
-        }
-        return acc;
-    },0);
-    return s[ind];
-}
-console.log(longest_word(" JavaScript is a scripting and programming language"));
+// function longest_word(s){
+//     s = s.split(" ")
+//     let ind = s.reduce((acc,cur,i)=>{
+//         if(cur.length>s[acc].length){
+//             return i;
+//         }
+//         return acc;
+//     },0);
+//     return s[ind];
+// }
+// console.log(longest_word(" JavaScript is a scripting and programming language"));
 
 //15. Given an array of integers and a target sum, return the indices of the two numbers that add up to the target
 
