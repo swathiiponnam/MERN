@@ -1,0 +1,63 @@
+.navBar{
+  background-color: #d0aaf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.navList>ul{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+.navList>ul>li{
+  cursor: pointer;
+}
+.logo{
+  margin: 10px 0px 10px 10px;
+}
+
+.logo>img{
+  border-radius: 50%;
+}
+
+.cardHolder{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.card{
+  border: 1px solid black;
+  padding: 20px;
+  background-color: gainsboro;
+  min-height: 350px;
+  width: 250px;
+}
+
+.cardImage{
+  height: 250px;
+  width: 250px;
+}
+.cardTitle,.cardDisc,.cardPrice{
+  font-size:20px ;
+  font-weight: 700;
+}
+
+.search{
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.search > button{
+  font-size: medium;
+  font-weight: 700;
+  background-color:#caa5ec;
+  color: whitesmoke;
+}
