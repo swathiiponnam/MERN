@@ -36,51 +36,41 @@
 
 // Fetch APi and print it using map method
 
+ // using list 
 
-const fetchApi = async ()=>{
-    let url = fetch("https://dummyjson.com/users")
-    .then(async (res)=>{
-        let userdata = await res.json()
-        let data = userdata.users 
-        console.log(data);
-        
-        console.log(userdata.users);
-
-        const root = document.getElementById("root")
-
-        // using list 
-
-        // const mycreation = data.map((ele)=>{
+        // data.map((ele)=>{
         //     const list = document.createElement("li")
         //     list.innerText = ele.firstName
         //     return root.appendChild(list)
         // })
 
 
-        // using table
+const fetchApi = ()=>{
+    let url = fetch("https://dummyjson.com/users")
+    .then(async (res)=>{
+        let userdata = await res.json()
+        let data = userdata.users 
+        console.log(data);
+        console.log(userdata.users);
+       
+        data.map((ele)=>{
 
-        // const mycreation = data.map((ele)=>{
-        //     const td1 = document.createElement("tbody")
-        //     td.innerText = ele.firstName 
-          
-        //     return root.appendChild(td)
-        // })
-
-        const mycreation = data.map((ele)=>{
+            const root = document.getElementById("root")
+            const mytable = document.getElementById("mytable")
+            const trow = document.createElement("tr")
+    
             const fname = document.createElement("td")
-            fname.innerText = ele.firstName
-
             const lname = document.createElement("td")
-            lname.innerText = ele.lastName
-          
             const id = document.createElement("td")
-            id.innerText = ele.id
 
-            root.appendChild(td)
-            root.appendChild(td)
-            root.appendChild(td)
+            id.innerText = ele.id;
+            fname.innerText = ele.firstName;
+            lname.innerText = ele.lastName;
 
-            root.appendChild(tr)
+            root.appendChild(mytable)
+            mytable.appendChild(trow);
+            trow.append(id,fname,lname);
+            
         })
         
         
@@ -91,3 +81,42 @@ const fetchApi = async ()=>{
     })
 }
 fetchApi();
+
+// const fectchData = ()=>{
+//     let response = fetch("url")
+//     .then((res)=>{
+//         let data = res.json()
+//         let userdata = data.users
+
+//         userdata.map((ele)=>{
+
+//         })
+//     })
+// }
+
+const Ap = ()=>{
+    let resp = fetch("")
+    .then((res)=>{
+        let fetchdata = res.json()
+        let data = fetchdata.users
+
+        data.map((ele)=>{
+            const mytable = document.getElementById("mytable")
+            const trow = document.getElementById("tr")
+
+            const fname = document.createElement("td")
+            const lname = document.createElement("td")
+
+            fname.innerText = ele.fname
+            lname.innerText = ele.lname
+
+            root.appendChild(mytable)
+            mytable.appendChild(trow)
+            trow.append(fname,lname)
+        })
+    })
+    .catch((err)=>{
+        console.log(err);
+        
+    })
+}

@@ -26,6 +26,18 @@
 // palindrome("madam");
 
 
+// function pal(s){
+//     let len = s.length-1
+//     for(let i=0;i<s.length;i++){
+//             if(s[i] != s[j]){
+//                 console.log('not a palindrome');
+                
+//             }
+//             len--;
+//         }
+//         console.log('yes,palindrome');
+// }
+
 // 3. fibonacci series
 
 // function fibonacci(n){
@@ -84,10 +96,10 @@
 // console.log(res);
 
 
-let num = -542;
-let rem = num%10;
-let div = num/10
-console.log(rem , div);
+// let num = -542;
+// let rem = num%10;
+// let div = num/10
+// console.log(rem , div);
 
 
 // 7. check if 2 given strings are anagram
@@ -226,3 +238,41 @@ console.log(rem , div);
 //     }
 //   }
 // }
+
+
+// let a = 10;
+// let b =20;
+// a = b++;
+// console.log(a);
+// console.log(b);
+
+// let arr = [1,2,3,4,7,8]
+// res = arr.slice(2,3)
+// res2 = arr.splice(2,3)
+// console.log(res);
+// console.log(res2);
+
+
+// console.log(a);
+// console.log(b);
+// const a = 40;
+// var b = ()=>{
+//     console.log("hello");
+    
+// }
+
+
+// let flag = false;
+
+// function tab(a,b){
+//     for(let i =1;i<=10;i++){
+//         if((i*a)==b){
+//             flag = true;
+//             break;
+//         }
+//     }
+//     (flag == true)? console.log('it is present') : console.log("it is not present");
+    
+    
+// }
+// tab(8,88);

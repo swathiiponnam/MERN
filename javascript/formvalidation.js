@@ -39,6 +39,7 @@
 //     let nameInput = nameField.value
 //     let emailInput = emailField.value
 
+
 //     // checking the value
 //     if (nameInput == "" || emailInput == "") {
 //         alert("u should fill all the fields")
@@ -70,86 +71,136 @@
 // .......................................User Form Validation...........
 
 
-const userForm = document.getElementById("userForm")
-const uname = document.getElementById("uname")
-const phone = document.getElementById("phone")
-const mail = document.getElementById("mail")
-const address = document.getElementById("address")
-const pincode = document.getElementById("pincode")
-const subbtn = document.getElementById("subbtn")
-userForm.addEventListener("submit",(event)=>{
-    event.preventDefault()
-    let nameField = uname.value ;
-    let phoneField = phone.value ;
-    let mailField = mail.value ;
-    let addressField = address.value;
-    let pincodeField = pincode.value;
+// const userForm = document.getElementById("userForm")
+// const uname = document.getElementById("uname")
+// const phone = document.getElementById("phone")
+// const mail = document.getElementById("mail")
+// const address = document.getElementById("address")
+// const pincode = document.getElementById("pincode")
+// const subbtn = document.getElementById("subbtn")
+// userForm.addEventListener("submit",(event)=>{
+//     event.preventDefault()
+//     let nameField = uname.value ;
+//     let phoneField = phone.value ;
+//     let mailField = mail.value ;
+//     let addressField = address.value;
+//     let pincodeField = pincode.value;
 
-    if(nameField == "" || phoneField == "" || mailField == "" || addressField == "" || pincodeField == ""){
-        alert(" * all fields are required")
-    }
+//     if(nameField == "" || phoneField == "" || mailField == "" || addressField == "" || pincodeField == ""){
+//         alert(" * all fields are required")
+//     }
 
-    // patterns
+//     // patterns
 
-   let namePattern = "^[A-Za-z]+(?: [A-Za-z]+)*$"
-   let phonePattern = "[6-9][0-9]{9}"
-   let mailPattern =  "^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
-//    let addressPattern = "/^[0-9A-Za-z\s]+$/"
-    let pincodePattern = "[1-9][0-9]{5}"
+//    let namePattern = "^[A-Za-z]+(?: [A-Za-z]+)*$"
+//    let phonePattern = "[6-9][0-9]{9}"
+//    let mailPattern =  "^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+// //    let addressPattern = "/^[0-9A-Za-z\s]+$/"
+//     let pincodePattern = "[1-9][0-9]{5}"
 
-   const nameError = document.getElementById("nameError")
-   const phoneError = document.getElementById("phoneError")
-   const mailError = document.getElementById("mailError")
-   const addressError = document.getElementById("addressError")
-   const pincodeError = document.getElementById("pincodeError")
+//    const nameError = document.getElementById("nameError")
+//    const phoneError = document.getElementById("phoneError")
+//    const mailError = document.getElementById("mailError")
+//    const addressError = document.getElementById("addressError")
+//    const pincodeError = document.getElementById("pincodeError")
 
-//    name validation
-   if(!(nameField.match(namePattern))){
-    nameError.innerText = "name pattern is not matched"
-    nameError.style.color = "red"
-   }
-   else{
-    nameError.innerText = ""
-   }
-
-//    phone validation
-   if(!(phoneField.match(phonePattern))){
-    phoneError.innerText = "phone pattern is not matched"
-    phoneError.style.color = "red"
-   }
-   else{
-    phoneError.innerText = ""
-   }
-
-
-//    mail validation
-
-   if(!(mailField.match(mailPattern))){
-    mailError.innerText = "mail pattern is not matched"
-    mailError.style.color = "red"
-   }
-   else{
-    mailError.innerText = ""
-   }
-
-//    address validation
-
-//    if(!(addressField.match(addressPattern))){
-//     addressError.innerText = "address pattern is not matched"
-//     addressError.style.color = "red"
+// //    name validation
+//    if(!(nameField.match(namePattern))){
+//     nameError.innerText = "name pattern is not matched"
+//     nameError.style.color = "red"
 //    }
 //    else{
-//     addressError.innerText = ""
+//     nameError.innerText = ""
 //    }
 
-// pincode validation
+// //    phone validation
+//    if(!(phoneField.match(phonePattern))){
+//     phoneError.innerText = "phone pattern is not matched"
+//     phoneError.style.color = "red"
+//    }
+//    else{
+//     phoneError.innerText = ""
+//    }
 
-if(!(pincodeField.match(pincodePattern))){
-    pincodeError.innerText = "pincode pattern is matched"
-    pincodeError.style.color = "red"
-}
-else{
-    pincodeError.innerText =""
-}
 
+// //    mail validation
+
+//    if(!(mailField.match(mailPattern))){
+//     mailError.innerText = "mail pattern is not matched"
+//     mailError.style.color = "red"
+//    }
+//    else{
+//     mailError.innerText = ""
+//    }
+
+// //    address validation
+
+// //    if(!(addressField.match(addressPattern))){
+// //     addressError.innerText = "address pattern is not matched"
+// //     addressError.style.color = "red"
+// //    }
+// //    else{
+// //     addressError.innerText = ""
+// //    }
+
+// // pincode validation
+
+// if(!(pincodeField.match(pincodePattern))){
+//     pincodeError.innerText = "pincode pattern is matched"
+//     pincodeError.style.color = "red"
+// }
+// else{
+//     pincodeError.innerText =""
+// }
+
+// })
+
+
+// const myfrm = document.getElementById("myfrm")
+// const uname1 = document.getElementById("uname")
+
+
+
+
+// // myfrm.addEventListener("submit",(event)=>{
+// //     event.preventDefault();
+
+// //     let unameIn = uname1.value
+
+// //     // patterns
+
+// //     let unamePat = "[a-zA-Z]"
+
+// //     // error
+
+// //     let nameERR = document.getElementById("nameERR")
+// //     // pattern valdation
+
+// //     if(unameIn == ""){
+// //         nameERR.innerText
+// //     }
+// // })
+
+
+
+
+
+const mydiv = document.getElementById("mydiv")
+const btn = document.getElementById("btn")
+mydiv.addEventListener("click",(event)=>{
+    // mydiv.innerText = "div clicked"
+    mydiv.style.backgroundColor = "red"
+    console.log("event from div");
+    
+})
+
+btn.addEventListener("click",(event)=>{
+    btn.innerText = "btn clicked"
+    btn.style.backgroundColor = "pink"
+    event.stopPropagation();
+    console.log("event from btn");
+    
+})
+btn.addEventListener("mouseout",(event)=>{
+    btn.innerText = "click"
 })
