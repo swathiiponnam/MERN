@@ -1,7 +1,10 @@
 import Body from './component/Body';
 import Counter from './component/Counter';
 import Nav from './component/Nav';
+import Timer from './component/Timer';
+import ToDo from './component/ToDo';
 import TodoList from './component/TodoList';
+import VoteCount from './component/VoteCount';
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
       <Nav/>
       {/* <Body/> */}
       {/* <Counter/> */}
-      <TodoList/>
+      {/* <TodoList/> */}
+      {/* <ToDo/> */}
+      {/* <Timer/> */}
+      <VoteCount/>
     </div>
   );
 }

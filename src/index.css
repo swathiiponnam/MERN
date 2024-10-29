@@ -61,3 +61,31 @@
   background-color:#caa5ec;
   color: whitesmoke;
 }
+
+.myForm{
+  border: 1px solid grey;
+  height: 200px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.myForm>input{
+  height: 20px;
+}
+
+.myForm> button{
+  height: 25px;
+  color: black;
+  border: 1px solid blue;
+}
+.myToDoDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
