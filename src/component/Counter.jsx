@@ -16,7 +16,7 @@ function Counter() {
   return (
     <>
     <h1>Counter App</h1>
-    <h2>{count}</h2>
+    <h2 role='count'>{count}</h2>
     <button onClick={incrmentFunc}>Increment</button>
     <button onClick={decrementFunc}>Decrement</button>
     </>

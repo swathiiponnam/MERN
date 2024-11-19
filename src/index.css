@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .navBar{
-  background-color: #d0aaf3;
+  background-color:pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,11 +38,34 @@
 .card{
   border: 1px solid black;
   padding: 20px;
-  background-color: gainsboro;
+  background-color: pink;
   min-height: 350px;
   width: 250px;
 }
 
+.skCard{
+  background-color:lightgray;
+  border-radius: 20px;
+  min-height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skCardTitle{
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+  margin: auto;
+  height: 30px;
+  width: 80%;
+}
+
+.skImg{
+  height: 250px;
+  width: 250px;
+}
 .cardImage{
   height: 250px;
   width: 250px;
@@ -62,10 +89,17 @@
   color: whitesmoke;
 }
 
+/* ................Counter css ......................... */
+
+
+
+/* .................Todo css ................ */
+
+
 .myForm{
   border: 1px solid grey;
-  height: 200px;
-  width: 50%;
+  height: 400px;
+  width: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,13 +107,24 @@
 }
 
 .myForm>input{
-  height: 20px;
+  padding: 30px;
+
 }
 
-.myForm> button{
-  height: 25px;
-  color: black;
-  border: 1px solid blue;
+.addBtn{
+  padding: 20px;
+  font-size: 20px;
+  color:navy;
+  border: none;
+  background-color: hwb(147 2% 8%);
+}
+
+.deleteBtn{
+  padding: 20px;
+  font-size: 20px;
+  color: whitesmoke;
+  border: none;
+  background-color: hwb(357 12% 3%);
 }
 .myToDoDiv{
   display: flex;
@@ -87,5 +132,85 @@
   align-items: center;
   justify-content: center;
   margin: 20px;
+  
 }
 
+
+/* ....................Voter Count css ...................... */
+.voterContainer{
+  background-color:wheat;
+  height: 500px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.voterSubContainer{
+  height: 400px;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: hsl(61, 78%, 51%);
+}
+
+.display{
+  display: flex;
+  gap: 17px;
+}
+.voteBtnContainer{
+  display: flex;
+  gap: 60px;
+}
+.voteBtn{
+  height: 100px;
+  width: 100px;
+  color: whitesmoke;
+  background-color: rgb(23, 218, 33);
+  border-radius: 50%;
+  border: none;
+}
+
+.voteDisplay{
+  color: whitesmoke;
+  padding-top: 20px;
+  background-color: hwb(249 7% 8%);
+  width: 130px;
+  height: 50px;
+  text-align: center;
+}
+
+/* .........Timer css */
+
+.timerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.timerContainer>div{
+  height: 400px;
+  width: 650px;
+  background-color:hwb(29 26% 3%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerContainer>div>h1{
+  color: indigo;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.timerContainer>div>p{
+  font-size: 100px;
+  font-weight: 900;
+  padding: 20px;
+  background-color: whitesmoke;
+  color:hsl(253, 88%, 49%);
+}
